@@ -50,6 +50,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'lervag/wiki.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 "noremap = :Autoformat<CR>
