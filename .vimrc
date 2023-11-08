@@ -51,6 +51,7 @@ Plug 'lervag/wiki.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'masukomi/vim-markdown-folding'
 call plug#end()
 
 "noremap = :Autoformat<CR>
@@ -64,4 +65,5 @@ let g:wiki_root = '~/notes'
 nmap <Leader>ow :WikiPages<CR>
 
 let g:markdown_fenced_languages = ['python', 'bash=sh', 'cpp', 'tex']
-
+let g:markdown_fold_override_foldtext = 0
+set foldtext=getline(v:foldstart)
