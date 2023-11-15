@@ -52,6 +52,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'masukomi/vim-markdown-folding'
+Plug 'vim-airline/vim-airline'
 call plug#end()
 
 "noremap = :Autoformat<CR>
