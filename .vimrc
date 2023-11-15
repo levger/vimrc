@@ -69,4 +69,6 @@ let g:markdown_fenced_languages = ['python', 'bash=sh', 'cpp', 'tex']
 let g:markdown_fold_override_foldtext = 0
 set foldtext=getline(v:foldstart)
 autocmd FileType markdown setlocal expandtab
+autocmd FileType markdown setlocal formatoptions=tqln
+autocmd FileType markdown setlocal autoindent
 
