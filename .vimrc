@@ -68,3 +68,5 @@ nmap <Leader>ow :WikiPages<CR>
 let g:markdown_fenced_languages = ['python', 'bash=sh', 'cpp', 'tex']
 let g:markdown_fold_override_foldtext = 0
 set foldtext=getline(v:foldstart)
+autocmd FileType markdown setlocal expandtab
+
