@@ -5,6 +5,7 @@ set nocompatible
 set enc=utf-8
 set fenc=utf-8
 set termencoding=utf-8
+set clipboard=unnamed,unnamedplus
 
 let mapleader = ","
 
@@ -15,11 +16,14 @@ else
 end
 
 set number
+set relativenumber
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 
 "match WarningMsg '\%>80v.\+'
+nmap <LEADER>w :w<CR>
+nmap <LEADER>q :q<CR>
 
 set hls
 "noremap <ENTER> <ESC>:nohlsearch<ENTER>
@@ -51,7 +55,8 @@ Plug 'lervag/wiki.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'masukomi/vim-markdown-folding'
+"Plug 'masukomi/vim-markdown-folding'
+Plug 'shushcat/vim-minimd'
 Plug 'vim-airline/vim-airline'
 call plug#end()
 
