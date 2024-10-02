@@ -15,17 +15,18 @@ else
     set smartindent
 end
 
-set number
 set relativenumber
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
+set hls
 
 "match WarningMsg '\%>80v.\+'
+nmap <LEADER>n :set norelativenumber!<CR>
 nmap <LEADER>w :w<CR>
 nmap <LEADER>q :q<CR>
+nmap <LEADER>h :set hls!<CR>
 
-set hls
 "noremap <ENTER> <ESC>:nohlsearch<ENTER>
 nnoremap Y y$
 
